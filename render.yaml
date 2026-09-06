@@ -1,0 +1,34 @@
+services:
+  - type: worker
+    name: fun-in-shadows
+    runtime: python
+    buildCommand: apt-get update && apt-get install -y ffmpeg && pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: OWNER_ID
+        value: "6298413188"
+      - key: API_ID
+        sync: false
+      - key: API_HASH
+        sync: false
+      - key: STRING_SESSION
+        sync: false
+      - key: MUSIC_SESSION
+        sync: false
+      - key: MONGO_URI
+        sync: false
+      - key: DELETE_AFTER
+        value: "600"
+      - key: CALL_DELETE_AFTER
+        value: "86400"
+      - key: CALL_MIN
+        value: "2"
+      - key: CALL_MAX
+        value: "5"
+      - key: CALL_DELAY
+        value: "1.2"
+
+      - key: OPENAI_API_KEY
+        sync: false
