@@ -1,0 +1,9 @@
+python-telegram-bot[job-queue]>=22.0,<23.0
+telethon>=1.43,<2
+pymongo>=4.13,<5
+py-tgcalls>=2.2.0,<3
+yt-dlp==2026.8.30.232658.dev0
+
+edge-tts>=7.0.0
+
+openai>=1.100.0,<2.0.0
